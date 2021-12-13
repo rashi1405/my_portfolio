@@ -21,10 +21,12 @@ body {
 }
 
 h2 {
-  font-size: 2.5rem;
+  font-size: 3rem;
   margin-top : 200px;
   margin-bottom: 50px;
-  font-style: Aladin;
+  font-style: italic ;
+  text-shadow: 2px 2px grey;
+  font-weight: bold;
 }
 
  /* Button */ 
@@ -32,7 +34,7 @@ h2 {
 .white {
   margin: 50px;
   background-color: white;
-  letter-spacing: 5px;
+  letter-spacing: 2px;
   width: auto;
   text-align: center;
   color: black;
@@ -41,6 +43,7 @@ h2 {
   font-size: 20px;
   padding: 15px;
   margin-bottom: 0; 
+  font-weight: bold;
 }
 
 
@@ -95,9 +98,9 @@ h2 {
     }
     
     .content h1 {
-      font-size: 3rem;
+      font-size: 4rem;
       color: white;
-      font-style : Aladin;
+      font-style : italic;
       margin-bottom :0;
     }
     
@@ -112,10 +115,10 @@ h2 {
     
       
     .banner img {
-      height:400px;
+      height:500px;
       border-radius: 50%;
       background-color: royalblue;
-      margin : 150px 0;
+      margin : 100px 0;
       width :90%;
     }
  
@@ -169,19 +172,23 @@ h2 {
  
 .skill {
   display : flex;
+  width:90%;
+  margin:0 5%;
+  
 }
 
 .skill div{
-  flex-basis: 18%;
+  flex-basis: 22%;
   border-radius: 0;
 }
  
  /* Image */ 
  
 .image img {
-  width : 100%;
+  width : 90%;
   height: 600px;
-  margin:100px 0;
+  margin:100px auto;
+  display:block;
 }
 
 .image {
@@ -207,7 +214,7 @@ h2 {
   padding :10px;
   font-size: 20px;
   margin : 20px 40px 50px 40px;
-  width : 66%;
+  width : 64%;
   height:240px;
   border-radius : 15px;
   border : 1px black solid ;
@@ -311,4 +318,10 @@ h2 {
     flex-basis: 70%;
   }
   
+}
+
+@media (min-width: 1200px){
+  .content h1 {
+    font-size: 4rem;
+  }
 }
