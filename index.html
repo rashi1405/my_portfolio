@@ -7,6 +7,7 @@
   <meta charset="UTF-8">
 
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -47,14 +48,14 @@
     </nav>  
 
  </div>
---> 
- <div class="container">
-  
+
+-->
+
    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: royalblue">
 
   <div class="container-fluid">
 
-    <a class="navbar-brand" href="#"style="font-weight:bold">Portfolio</a>
+    <a class="navbar-brand" href="#"style="font-weight:bold">PORTFOLIO</a>
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 
@@ -110,6 +111,7 @@
 
 </nav>
 
+
   
 <div>
 
@@ -119,13 +121,13 @@
 
         
 
-         <div class="content">
+         <div class="content" data-aos="fade-up">
 
         
 
       
 
-       <h1>Rashi Jaiswal</h1>
+       <h1 data-aos="zoom-in" id='fnt'>Rashi Jaiswal</h1>
 
             <p>I am a passionate learner</p>
 
@@ -145,10 +147,9 @@
 
       <div class="column-2">
 
-          <div class="banner">
-
-            <img src="Banner.jpg">
-
+          <div class="banner" data-aos="flip-left">
+            <img src="new_gif.gif">
+            
           </div>
 
       </div>
@@ -165,13 +166,13 @@
 
          
 
-<h2 id="one">My Education</h2>
+<h2 id="one" data-aos="flip-up">My Education</h2>
 
    <div class="contact">
 
       
 
-     <div>     
+     <div data-aos="zoom-in">     
 
            
 
@@ -189,7 +190,7 @@
 
       
 
-     <div>
+     <div data-aos="zoom-in">
 
         
 
@@ -207,7 +208,7 @@
 
       
 
-     <div>
+     <div data-aos="zoom-in">
 
       
 
@@ -233,9 +234,9 @@
 
 <main>
 
-    
+  <!--
 
-  <h2 id="two">My Projects</h2>
+  <h2 id="two" data-aos="flip-up">My Projects</h2>
 
    
 
@@ -253,17 +254,18 @@
 
    <br><br>
 
- <!--  
+   
 
    <a href="https://rashi1405.github.io/delivery/"><img src="one.gif"></a>
 
    
 
    <a href="https://rashi1405.github.io/gym_page/"><img src="four.gif"></a>
--->
+
   </div>
 
-    
+-->
+
 
 </main> 
 
@@ -273,7 +275,7 @@
 
   
 
- <h2 id="three">My Interests</h2>
+ <h2 id="three" data-aos="flip-up">My Interests</h2>
 
  
 
@@ -281,29 +283,29 @@
 
    
 
-   <div>C++</div>
+   <div data-aos="flip-left">C++</div>
 
-   <div>Data structures</div>
+   <div data-aos="flip-left">Data structures</div>
 
-   <div>Html</div>
+   <div data-aos="flip-left">Html</div>
 
-   <div>Css</div>
+   <div data-aos="flip-left">Css</div>
 
-   <div>Javascript</div>
+   <div data-aos="flip-left">Javascript</div>
 
-   <div>Bootstrap</div>
+   <div data-aos="flip-left">Bootstrap</div>
 
-   <div>Networking</div>
+   <div data-aos="flip-left">Networking</div>
 
-   <div>Operating system</div>
+   <div data-aos="flip-left">Operating system</div>
 
-   <div>DBMS</div>
+   <div data-aos="flip-left">DBMS</div>
 
-   <div>coding</div>
+   <div data-aos="flip-left">coding</div>
+       
+   <div data-aos="flip-left">content writing</div>
 
-   <div>content writing</div>
-
-   <div>web designing</div>
+   <div data-aos="flip-left">web designing</div>
 
    
 
@@ -317,11 +319,11 @@
 
    
 
-   <img src="colab.gif">
+   <img src="colab.gif" data-aos="zoom-out">
 
    
 
-   <b>Interested in doing a project together<br><br>drop Your details below .</b>
+   <b data-aos="zoom-out">Interested in doing a project together<br><br>drop Your details below .</b>
 
  </div>
 
@@ -331,21 +333,23 @@
 
     
 
-    <input type="text" name="Name" placeholder="Your Name" class="input">
+    <input type="text" name="Name" placeholder="Your Name" class="input" data-aos="fade-right">
 
-    <input type="email" name="Mail id" placeholder="Your Email" class="input">
+    <input type="email" name="Mail id" placeholder="Your Email" class="input" data-aos="fade-left">
 
     <br>
 
     
 
-    <textarea type="text" name="message" placeholder="Enter your text..." id="textarea"></textarea>
+    <textarea type="text" name="message" placeholder="Enter your text..." id="textarea" data-aos="fade-down"
+    data-aos-easing="linear"
+    data-aos-duration="1500"></textarea>
 
     
 
     <center>
 
-    <input type="Submit" value="Send Message" class="submitbutton"></center>
+    <input type="Submit" value="Send Message" class="submitbutton" data-aos="zoom-in"></center>
 
     </form>
 
@@ -366,8 +370,21 @@
      
 
   </footer>
- </div>
 </div>
+
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+
+ AOS.init({
+
+   duration:1500
+
+ });
+
+</script>
+  
 
 </body>
 
