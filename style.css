@@ -325,3 +325,16 @@ h2 {
     font-size: 4rem;
   }
 }
+
+
+
+.fnt 
+{
+  font-family: 'Shizuru', cursive;
+  text-transform: uppercase;
+}
+
+#fnt2{
+  font-family: 'Pushster', cursive;
+  text-transform: uppercase;
+}
