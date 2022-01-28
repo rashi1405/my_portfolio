@@ -3,7 +3,7 @@ body {
       font-size: 20px;
       margin:0;
       padding:0;
-      background-color: #F2F2F4;
+      background-color:white;
 }
 
 .navbar-dark .navbar-nav .nav-link {
@@ -14,6 +14,18 @@ body {
 
 }
 
+.card-body a{
+  padding : 5px !important;
+}
+
+.main_image img{
+  height:400px !important;
+}
+
+section{
+  margin-bottom: 150px;
+}
+
 .navbar {
 
   border : 1px solid white;
@@ -22,8 +34,7 @@ body {
 
 h2 {
   font-size: 3rem;
-  margin-top : 200px;
-  margin-bottom: 50px;
+  margin: 50px;
   font-style: italic ;
   text-shadow: 2px 2px grey;
   font-weight: bold;
@@ -35,44 +46,19 @@ h2 {
   margin: 50px;
   background-color: white;
   letter-spacing: 2px;
-  width: auto;
+  width: 250px;
   text-align: center;
-  color: black;
+  color:red;
   border-radius: 50px;
   height: auto;
   font-size: 20px;
   padding: 15px;
   margin-bottom: 0; 
   font-weight: bold;
+  border-color: white;
+  font-style: italic;
 }
 
-
-
-
-
-
-/* Navigation bar */
-
-.nav {
-      width : 100%;
-      border : 1px solid white;
-      background-color: royalblue;
-      position: fixed;
-      top:0;
-      color:white;
-    }
-    
-.nav ul {
-      list-style-type: none;
-      padding: 0;
-      display:flex;
-      justify-content: space-evenly;
-    }
-    
-.nav a {     
-      text-decoration: none;    
-      color : white;
- }
  
  /* Banner image */ 
  
@@ -81,7 +67,7 @@ h2 {
       display:flex;
       width:100%;
       height: 700px;
-      margin: 0px 0 200px;
+      margin: 0;
       background-color: royalblue;
     }
     
@@ -139,19 +125,19 @@ h2 {
 .contact p {
   font-size : 18px;
   text-align: center;
-  color: white;
+  color:black;
 }
 
 .contact div {
-  padding : 15px;
+  padding : 10px;
   background-color: royalblue;
   margin : 10px;
   border : 1px solid lightgrey;
   line-height: 30px;
   text-align: center;
   overflow-x: auto;
- /* border-radius: 30px;*/
-  box-shadow: 3px 3px 3px black;
+ /* border-radius: 30px; */
+  box-shadow: 3px 3px 3px grey;
 }
 
 
@@ -180,23 +166,30 @@ h2 {
 .skill div{
   flex-basis: 22%;
   border-radius: 0;
+
 }
  
+
+
  /* Image */ 
  
 .image img {
   width : 90%;
-  height: 600px;
-  margin:100px auto;
+  height: 600px !important;
+  margin:30px auto;
   display:block;
 }
 
 .image {
   font-weight: bold;
   color : royalblue;
-  margin : 100px 0;
+  margin : 0;
 }
 
+.image p{
+  font-size: 40px;
+  margin-bottom: 60px;
+}
 
  /* Input form */ 
  
@@ -244,15 +237,14 @@ h2 {
       text-align: center;
       background-color : royalblue;
       line-height: 2rem;
-      margin-top: 100px;
-      border : 1px solid black;
+      margin-top: 30px;
       color : white;
       padding : 10px;
-      font-size: 15px;
 }
 
-.image b {
-    font-size: 1.5rem;
+.footer p{
+  font-style: italic;
+  font-size: 18px;
 }
 
  /* media queries */ 
@@ -318,6 +310,10 @@ h2 {
     flex-basis: 70%;
   }
   
+.image p{
+  font-size: 25px;
+}
+  
 }
 
 @media (min-width: 1200px){
@@ -327,14 +323,13 @@ h2 {
 }
 
 
-
-.fnt 
-{
-  font-family: 'Shizuru', cursive;
+#fnt2 , .fnt{
+  font-family: 'Pushster', cursive;
   text-transform: uppercase;
 }
 
-#fnt2{
-  font-family: 'Pushster', cursive;
-  text-transform: uppercase;
+@media (max-width:850px){
+  h2{
+     font-size: 2rem;
+  }
 }
