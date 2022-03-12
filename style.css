@@ -32,6 +32,13 @@ section{
 
 }
 
+
+.nav-item a:hover{
+  color: black !important;
+  font-weight: bold !important;
+}
+
+
 h2 {
   font-size: 3rem;
   margin: 50px;
